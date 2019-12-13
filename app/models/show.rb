@@ -20,7 +20,7 @@ class Show < ActiveRecord::Base
     return self.sum("rating")
   end
   
-  def popular_shows
+  def self.popular_shows
     return self.where("rating > 5")
   end
   
