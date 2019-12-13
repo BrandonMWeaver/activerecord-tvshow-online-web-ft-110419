@@ -8,4 +8,8 @@ class Show < ActiveRecord::Base
     return self.where("rating = #{self.highest_rating}").first
   end
   
+  def self.lowest_rating
+    
+  end
+  
 end
